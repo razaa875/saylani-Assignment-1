@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo23"></p>
+    <p id="demo"></p>
+    <p id="demo21"></p>
+    <p id="demo1"></p>
+    <p id="demo22"></p>
+    <p id="demo2"></p>
+    <p id="demo24"></p>
+    <p id="demo3"></p> 
+    <p id="demo25"></p>
+    <p id="demo4"></p> 
+<script>
+
+function leapyear(year)
+{
+return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
+}
+
+
+document.getElementById("demo23").innerHTML = "leapyear = 2016";
+document.getElementById("demo").innerHTML = leapyear(2016);
+document.getElementById("demo21").innerHTML = "leapyear = 2000";
+document.getElementById("demo1").innerHTML = leapyear(2000);
+document.getElementById("demo22").innerHTML = "leapyear = 1700";
+document.getElementById("demo2").innerHTML = leapyear(1700);
+document.getElementById("demo24").innerHTML = "leapyear = 1800";
+document.getElementById("demo3").innerHTML = leapyear(1800);
+document.getElementById("demo25").innerHTML = "leapyear = 100";
+
+document.getElementById("demo4").innerHTML = leapyear(100);
+    </script>
+
+
+</body>
+</html>
