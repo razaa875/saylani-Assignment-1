@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <script>
+        
+        function capital_letter(str) 
+{
+    str = str.split(" ");
+
+    for (var i = 0, x = str.length; i < x; i++) {
+        str[i] = str[i][0].toUpperCase() + str[i].substr(1);
+    }
+
+    return str.join(" ");
+}
+
+document.getElementById("demo").innerHTML = "capital letter of This is pakistan";
+document.getElementById("demo1").innerHTML = capital_letter("This is pakistan");
+console.log(); 
+        
+        
+        </script>
+</body>
+</html>
